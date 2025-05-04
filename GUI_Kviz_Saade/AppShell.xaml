@@ -8,26 +8,8 @@
     Shell.FlyoutBehavior="Flyout"
     Title="GUI_Kviz_Saade">
 
-    <ShellContent
-        Title="Dashboard"
-        Icon="{StaticResource IconDashboard}"
-        ContentTemplate="{DataTemplate pages:MainPage}"
-        Route="main" />
-
-    <ShellContent
-        Title="Projects"
-        Icon="{StaticResource IconProjects}"
-        ContentTemplate="{DataTemplate pages:ProjectListPage}"
-        Route="projects" />
-
     <ShellContent Title="Kvíz" ContentTemplate="{DataTemplate pages:QuizPage}" />
 
-
-    <ShellContent
-        Title="Manage Meta"
-        Icon="{StaticResource IconMeta}"
-        ContentTemplate="{DataTemplate pages:ManageMetaPage}"
-        Route="manage" />
 
     <Shell.FlyoutFooter>
         <Grid Padding="15">
