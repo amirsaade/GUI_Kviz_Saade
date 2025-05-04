@@ -1,4 +1,6 @@
-﻿using GUI_Kviz_Saade.Models;
+﻿using System.Reflection;
+using System.Text.Json;
+using GUI_Kviz_Saade.Models;
 
 namespace GUI_Kviz_Saade.Pages;
 
@@ -17,22 +19,14 @@ public partial class QuizPage : ContentPage
 
     private void LoadQuestions()
     {
-        // Zatiaľ natvrdo pridáme otázky, neskôr môžeme načítať zo súboru
-        _questions = new List<Question>
-        {
-            new Question
-            {
-                Text = "Aké je hlavné mesto Slovenska?",
-                Options = new List<string> { "Bratislava", "Košice", "Nitra", "Žilina" },
-                CorrectOptionIndex = 0
-            },
-            new Question
-            {
-                Text = "Koľko má človek prstov na rukách?",
-                Options = new List<string> { "4", "5", "6", "10" },
-                CorrectOptionIndex = 1
-            }
-        };
+        var assembly = Assembly.GetExecutingAssembly();
+        var resourceName = "GUI_Kviz_Saade.Resources.questions.json";
+
+        using Stream stream = assembly.GetManifestResourceStream(resourceName);
+        using StreamReader reader = new(stream);
+        string json = reader.ReadToEnd();
+
+        _questions = JsonSerializer.Deserialize<List<Question>>(json) ?? new List<Question>();
     }
 
     private void ShowQuestion()

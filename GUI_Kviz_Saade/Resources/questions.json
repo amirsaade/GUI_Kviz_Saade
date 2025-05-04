@@ -1,0 +1,37 @@
+﻿[
+  {
+    "Text": "Aké je hlavné mesto Slovenska?",
+    "Options": [ "Bratislava", "Košice", "Nitra", "Žilina" ],
+    "CorrectOptionIndex": 0
+  },
+  {
+    "Text": "Koľko má človek prstov na rukách?",
+    "Options": [ "4", "5", "6", "10" ],
+    "CorrectOptionIndex": 1
+  },
+  {
+    "Text": "Aké je najväčšie zviera na svete?",
+    "Options": [ "Slon", "Modrá veľryba", "Žirafa", "Krokodíl" ],
+    "CorrectOptionIndex": 1
+  },
+  {
+    "Text": "Aký je najvyšší vrch na svete?",
+    "Options": [ "K2", "Mount Everest", "Mont Blanc", "Makalu" ],
+    "CorrectOptionIndex": 1
+  },
+  {
+    "Text": "Kto napísal román '1984'?",
+    "Options": [ "George Orwell", "Aldous Huxley", "Ray Bradbury", "F. Scott Fitzgerald" ],
+    "CorrectOptionIndex": 0
+  },
+  {
+    "Text": "Aké je chemické označenie zlata?",
+    "Options": [ "Ag", "Au", "Pb", "Fe" ],
+    "CorrectOptionIndex": 1
+  },
+  {
+    "Text": "Ktorý kontinent je najväčší?",
+    "Options": [ "Afrika", "Ázia", "Severná Amerika", "Európa" ],
+    "CorrectOptionIndex": 1
+  }
+]
