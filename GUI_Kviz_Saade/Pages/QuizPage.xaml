@@ -1,0 +1,17 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GUI_Kviz_Saade.Pages.QuizPage"
+             Title="Kvíz">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label x:Name="QuestionTextLabel" FontSize="22" Text="Otázka" />
+
+        <Image x:Name="QuestionImage" HeightRequest="200" IsVisible="False" />
+
+        <Button x:Name="OptionAButton" Clicked="OnOptionClicked" />
+        <Button x:Name="OptionBButton" Clicked="OnOptionClicked" />
+        <Button x:Name="OptionCButton" Clicked="OnOptionClicked" />
+        <Button x:Name="OptionDButton" Clicked="OnOptionClicked" />
+    </VerticalStackLayout>
+
+</ContentPage>

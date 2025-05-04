@@ -1,0 +1,11 @@
+namespace GUI_Kviz_Saade.Pages
+{
+    public partial class ManageMetaPage : ContentPage
+    {
+        public ManageMetaPage(ManageMetaPageModel model)
+        {
+            InitializeComponent();
+            BindingContext = model;
+        }
+    }
+}
